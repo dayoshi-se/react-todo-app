@@ -1,6 +1,7 @@
 import React from 'react';
 import TodoList from './TodoList'
 import Form from './Form';
+import './app.css';
 
 class App extends React.Component{
     constructor(props){
@@ -28,7 +29,7 @@ class App extends React.Component{
 
     render() {
         return (
-            <div>
+            <div class="app">
                 <h1>todoアプリ</h1>
                 <Form 
                     value={this.state.value}
